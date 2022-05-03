@@ -1,3 +1,14 @@
-h1{
-    color: rgb(189, 76, 76);
+body{
+    margin: 0;
+    padding: 0;
 }
+
+h1{
+    color: rgb(255, 181, 90);
+    text-align: center;
+}
+
+.header{
+    background-color: antiquewhite;
+}
+
