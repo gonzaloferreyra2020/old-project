@@ -10,7 +10,7 @@ function App() {
       <h1>Esta es mi app de react</h1>
       <h2><ItemListContainer greeting={"saludos"}/></h2>
     </div>
-    <ItemCount/>
+    <ItemCount />
     </>
   );
 }
