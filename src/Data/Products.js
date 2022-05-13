@@ -2,7 +2,7 @@ export const products = [{
 
     id:1,
     title: "Mouse",
-    image: "",
+    image: "images/descarga.jpg",
     price: 3500,
     stock: 25,
 },
@@ -10,7 +10,7 @@ export const products = [{
 
     id:2,
     title: "Monitor 27 pulgadas",
-    image: "",
+    image: "images/descarga.jpg",
     price: 48500,
     stock: 7,
 },
@@ -18,7 +18,7 @@ export const products = [{
 
     id:3,
     title: "Parlante 20 watts",
-    image: "",
+    image: "images/descarga.jpg",
     price: 35000,
     stock: 20,
 },
@@ -26,7 +26,7 @@ export const products = [{
 
     id:4,
     title: "Silla gaming",
-    image: "",
+    image: "images/descarga.jpg",
     price: 57000,
     stock: 12,
 },
