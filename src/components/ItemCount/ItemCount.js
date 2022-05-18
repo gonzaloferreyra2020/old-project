@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export default function ItemCount({stock,initial,onAdd}){
 
-    const [count,setCount]= useState(1);
+    const [count,setCount]= useState(initial);
    
     return(
         <div className="Counter">
