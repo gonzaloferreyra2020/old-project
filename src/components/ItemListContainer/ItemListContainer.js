@@ -1,6 +1,7 @@
 import {products} from "../../Data/Products";
 import ItemList from "../ItemList/ItemList";
 import Item from "../Item/Item";
+import ItemCount from "../ItemCount/ItemCount";
 
 export default function ItemListContainer ({greeting}){
 
@@ -19,9 +20,16 @@ export default function ItemListContainer ({greeting}){
         })
         console.log(products.map((item) => item.title))
 
+    
+    const onAdd = (total) =>{
+      console.log({total} );
+      }
+
+        
     return(
         <div>
         {greeting}
+        <ItemCount stock={5} initial={1} onAdd={onAdd}/>
         </div>
     )
 
