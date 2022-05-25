@@ -1,8 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemCount from "./components/ItemCount/ItemCount";
-import Item from "./components/Item/Item";
-import ItemList from "./components/ItemList/ItemList";
 import axios from "axios";
 
 

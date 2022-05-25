@@ -1,25 +1,24 @@
-import {products} from "../../Data/Products";
+import {products} from "../../Data/products";
 import ItemList from "../ItemList/ItemList";
 import ItemCount from "../ItemCount/ItemCount";
+import React, {useEffect,useState} from "react";
 
 export default function ItemListContainer ({greeting}){
 
-    const task = new Promise((resolve,reject) => {
-        setTimeout(()=>{
-          resolve(products);
-        },3000)
-        })
-    
-        task.then((result) =>{
-          console.log(result)
-        },err =>{
-          console.log(err)
-        }).catch((err) =>{
-          console.log(err)
-        })
-        console.log(products.map((item) => item.title))
+  const [items, setItems] = useState([]);
 
+  useEffect ( () =>{
+    const task = new Promise( resolve=>{
+      setTimeout(() =>{
+        resolve(products)
+      },3000);
+    })
+    task.then(res=> setItems(res));
     
+  })
+
+
+    //contador
     const onAdd = (total) =>{
       console.log({total} );
       }
@@ -29,7 +28,7 @@ export default function ItemListContainer ({greeting}){
         <div>
         {greeting}
         <ItemCount stock={5} initial={1} onAdd={onAdd}/>
-        <ItemList/>
+        <ItemList items={items}/>
         </div>
     )
 
