@@ -1,4 +1,6 @@
 import CartWidget from "../CartWidget/CartWidget";
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
 
     const headerStyle = {
@@ -12,9 +14,12 @@ export default function Navbar() {
         <header className="header">
             <div className="nombreTienda">Tienda Ferreyra</div>
             <ul className="links" style={headerStyle}>
-                <li>Inicio</li>
-                <li>Productos</li>
-                <li>Mi perfil</li>
+                <NavLink to="/">Inicio</NavLink>
+                <NavLink to="/category/:id">Productos</NavLink>
+                <NavLink to="/item">item</NavLink>
+                <NavLink to="/login">Mi cuenta</NavLink>
+                <NavLink to="/cart">Mi carrito</NavLink>
+                
                 
             </ul>
             <CartWidget count={4}/>
