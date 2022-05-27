@@ -1,4 +1,5 @@
 import {Card, Button} from 'react-bootstrap';
+import "../../styles/styles.css";
 
 
 const Item = ({item}) =>{

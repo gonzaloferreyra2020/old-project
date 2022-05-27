@@ -12,14 +12,17 @@ h2{
     text-align: center;
     
 }
+
 .header{
     background-color: antiquewhite;
     padding: 25px;
 }
+
 .Counter{
     text-align: center;
     border: 50px;
 }
+
 submit{
     padding: 50px;
 }
@@ -27,4 +30,8 @@ submit{
 .Counter button{
     margin: 10px;
     padding: 8px;
+}
+
+img{
+    max-width: 100% !important;
 }
