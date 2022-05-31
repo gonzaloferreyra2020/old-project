@@ -16,6 +16,14 @@ h2{
 .header{
     background-color: antiquewhite;
     padding: 25px;
+
+    width: 97%;
+    height: 100%;
+    max-width: 1530px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .Counter{

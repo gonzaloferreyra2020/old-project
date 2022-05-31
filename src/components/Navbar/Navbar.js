@@ -1,6 +1,7 @@
 import CartWidget from "../CartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
 
+
 export default function Navbar() {
 
     const headerStyle = {
@@ -8,11 +9,13 @@ export default function Navbar() {
         justifyContent:"space-around",
         flexWrap:"wrap",
         listStyle:"none",
-        marginLeft:"5px"
+        alignItems: "center",
+        overflow: "hidden",
+        
     }
     return (
         <header className="header">
-            <div className="nombreTienda">Tienda Ferreyra</div>
+            <div className="nombreTienda">Ferreyra</div>
             <ul className="links" style={headerStyle}>
                 <NavLink to="/">Inicio</NavLink>
                 <NavLink to="/category/:id">Productos</NavLink>
